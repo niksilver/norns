@@ -3,7 +3,7 @@
 -- The [norns script reference](https://monome.org/docs/norns/reference/)
 -- has [examples for this module](https://monome.org/docs/norns/reference/lib/lattice).
 --
--- @module Lattice
+-- @module lib.Lattice
 -- @release v2.0
 -- @author tyleretters & ezra & zack & rylee
 
@@ -218,19 +218,19 @@ function Sprocket:set_division(n)
 end
 
 --- set the action for this sprocket
--- @tparam function the action
+-- @param fn the action
 function Sprocket:set_action(fn)
   self.action = fn
 end
 
 --- set the swing of the sprocket
--- @tparam number the swing value 0-100%
+-- @param swing number the swing value 0-100%
 function Sprocket:set_swing(swing)
   self.swing = util.clamp(swing,0,100)
 end
 
 --- set the delay for this sprocket
--- @tparam fraction of the time between beats to delay (0-1)
+-- @param delay fraction of the time between beats to delay (0-1)
 function Sprocket:set_delay(delay)
   self.delay_new = util.clamp(delay,0,1)
 end

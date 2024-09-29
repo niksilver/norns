@@ -227,8 +227,8 @@ function S:reset()
 end
 
 
-------------------------------
---- metamethods
+-- ---------------------------
+--  metamethods
 
 -- calling the sequins library will create a new sequins object (S:new)
 -- calling a sequins object will produce a new value (S:next)

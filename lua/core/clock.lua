@@ -364,7 +364,7 @@ end
 
 
 clock.help = [[
---------------------------------------------------------------------------------
+-- -----------------------------------------------------------------------------
 clock.run( func )             start a new coroutine with function [func]
                               (returns) created id
 clock.cancel( id )            cancel coroutine [id]
@@ -375,7 +375,7 @@ clock.get_beats()             (returns) current time in beats
 clock.get_tempo()             (returns) current tempo
 clock.get_beat_sec()          (returns) length of a single beat at current
                                 tempo in seconds
---------------------------------------------------------------------------------
+-- -----------------------------------------------------------------------------
 -- example
 
 -- start a clock with calling function [loop]

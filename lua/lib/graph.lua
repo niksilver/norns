@@ -227,8 +227,8 @@ end
 -- @tparam number y_max Maximum value for y axis, defaults to 1.
 -- @tparam string y_warp defines warping for y axis, accepts "lin" or "exp", defaults to "lin".
 -- @tparam string style defines visual style, accepts "line", "point", "spline", "line\_and\_point", "spline\_and\_point" or "bar", defaults to "line".
--- @tparam boolean show\_x\_axis Display the x axis if set to true, defaults to false.
--- @tparam boolean show\_y\_axis Display the y axis if set to true, defaults to false.
+-- @tparam boolean show_x_axis Display the x axis if set to true, defaults to false.
+-- @tparam boolean show_y_axis Display the y axis if set to true, defaults to false.
 -- @treturn Graph Instance of Graph.
 function Graph.new(x_min, x_max, x_warp, y_min, y_max, y_warp, style, show_x_axis, show_y_axis)
   local graph = {}

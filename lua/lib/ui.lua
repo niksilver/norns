@@ -335,7 +335,7 @@ UI.Slider.__index = UI.Slider
 -- @tparam number min_value Minimum value, defaults to 0.
 -- @tparam number max_value Maximum value, defaults to 1.
 -- @tparam table markers Array of marker positions.
--- @tparam string the direction of the slider "up" (defult), down, left, right
+-- @tparam string direction the direction of the slider "up" (defult), down, left, right
 -- @treturn Slider Instance of Slider.
 function UI.Slider.new(x, y, width, height, value, min_value, max_value, markers, direction)
   local slider = {

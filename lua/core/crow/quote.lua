@@ -1,4 +1,4 @@
---- Quote sub-library
+-- Quote sub-library
 -- fns for stringifying data-structures
 -- output is a string that can be read back as lua code with call()
 

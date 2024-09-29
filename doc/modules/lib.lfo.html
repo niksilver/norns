@@ -63,10 +63,10 @@
   <li><a href="../modules/script.html">script</a></li>
   <li><a href="../modules/softcut.html">softcut</a></li>
   <li><a href="../modules/lib.BeatClock.html">lib.BeatClock</a></li>
-  <li><a href="../modules/lib.container.defaulttable.html">lib.container.defaulttable</a></li>
+  <li><a href="../modules/DefaultTable.html">DefaultTable</a></li>
   <li><a href="../modules/lib.container.deque.html">lib.container.deque</a></li>
-  <li><a href="../modules/lib.container.observable.html">lib.container.observable</a></li>
-  <li><a href="../modules/lib.container.watchtable.html">lib.container.watchtable</a></li>
+  <li><a href="../modules/lib.observable.html">lib.observable</a></li>
+  <li><a href="../modules/lib.container.WatchTable.html">lib.container.WatchTable</a></li>
   <li><a href="../modules/lib.container.weaktable.html">lib.container.weaktable</a></li>
   <li><a href="../modules/lib.elca.html">lib.elca</a></li>
   <li><a href="../modules/lib.EnvGraph.html">lib.EnvGraph</a></li>
@@ -78,7 +78,7 @@
   <li><a href="../modules/lib.Graph.html">lib.Graph</a></li>
   <li><a href="../modules/lib.hotswap.html">lib.hotswap</a></li>
   <li><a href="../modules/lib.intonation.html">lib.intonation</a></li>
-  <li><a href="../modules/Lattice.html">Lattice</a></li>
+  <li><a href="../modules/lib.Lattice.html">lib.Lattice</a></li>
   <li><strong>lib.lfo</strong></li>
   <li><a href="../modules/lib.listselect.html">lib.listselect</a></li>
   <li><a href="../modules/lib.MusicUtil.html">lib.MusicUtil</a></li>
@@ -111,11 +111,11 @@
 <h2><a href="#Functions">Functions</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#LFO.new">LFO.new (string, number, number, number, string, number, function, number, string)</a></td>
+	<td class="name" nowrap><a href="#LFO.new">LFO.new (shape, min, max, depth, mode, period, action, phase, baseline)</a></td>
 	<td class="summary">construct an LFO</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#LFO:add">LFO:add (shape, min, max, depth, mode, period, action, number, string)</a></td>
+	<td class="name" nowrap><a href="#LFO:add">LFO:add (args)</a></td>
 	<td class="summary">construct an LFO via table arguments
  eg.</td>
 	</tr>
@@ -140,7 +140,7 @@
 	<td class="summary">reset the LFO's phase</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#LFO:add_params">LFO:add_params (id[, separator[, group]])</a></td>
+	<td class="name" nowrap><a href="#LFO:add_params">LFO:add_params (id[, sep[, group]])</a></td>
 	<td class="summary">Build parameter menu UI for an already-constructed LFO.</td>
 	</tr>
 </table>
@@ -154,55 +154,10 @@
     <dl class="function">
     <dt>
     <a name = "LFO.new"></a>
-    <strong>LFO.new (string, number, number, number, string, number, function, number, string)</strong>
+    <strong>LFO.new (shape, min, max, depth, mode, period, action, phase, baseline)</strong>
     </dt>
     <dd>
     construct an LFO
-
-
-    <h3>Parameters:</h3>
-    <ul>
-        <li><span class="parameter">string</span>
-         baseline From where the LFO should start (options: 'min', 'center', 'max'; default: 'min')
-        </li>
-        <li><span class="parameter">number</span>
-         phase The phase shift amount for this LFO (range: 0.0 to 1.0,; default: 0)
-        </li>
-        <li><span class="parameter">number</span>
-         phase The phase shift amount for this LFO (range: 0.0 to 1.0,; default: 0)
-        </li>
-        <li><span class="parameter">number</span>
-         phase The phase shift amount for this LFO (range: 0.0 to 1.0,; default: 0)
-        </li>
-        <li><span class="parameter">string</span>
-         baseline From where the LFO should start (options: 'min', 'center', 'max'; default: 'min')
-        </li>
-        <li><span class="parameter">number</span>
-         phase The phase shift amount for this LFO (range: 0.0 to 1.0,; default: 0)
-        </li>
-        <li><span class="parameter">function</span>
-         action A callback function to perform as the LFO advances. This library passes both the scaled and the raw value to the callback function.
-        </li>
-        <li><span class="parameter">number</span>
-         phase The phase shift amount for this LFO (range: 0.0 to 1.0,; default: 0)
-        </li>
-        <li><span class="parameter">string</span>
-         baseline From where the LFO should start (options: 'min', 'center', 'max'; default: 'min')
-        </li>
-    </ul>
-
-
-
-
-
-</dd>
-    <dt>
-    <a name = "LFO:add"></a>
-    <strong>LFO:add (shape, min, max, depth, mode, period, action, number, string)</strong>
-    </dt>
-    <dd>
-    construct an LFO via table arguments
- eg.  my_lfo:add{shape = 'sine', min = 200, max = 12000}
 
 
     <h3>Parameters:</h3>
@@ -235,11 +190,50 @@
             <span class="types"><span class="type">function</span></span>
          A callback function to perform as the LFO advances. This library passes both the scaled and the raw value to the callback function.
         </li>
-        <li><span class="parameter">number</span>
-         phase The phase shift amount for this LFO (range: 0.0 to 1.0,; default: 0)
+        <li><span class="parameter">phase</span>
+            <span class="types"><span class="type">number</span></span>
+         The phase shift amount for this LFO (range: 0.0 to 1.0,; default: 0)
         </li>
-        <li><span class="parameter">string</span>
-         baseline From where the LFO should start (options: 'min', 'center', 'max'; default: 'min')
+        <li><span class="parameter">baseline</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         From where the LFO should start (options: 'min', 'center', 'max'; default: 'min')
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "LFO:add"></a>
+    <strong>LFO:add (args)</strong>
+    </dt>
+    <dd>
+
+<p>construct an LFO via table arguments
+ eg.  my_lfo:add{shape = 'sine', min = 200, max = 12000}</p>
+
+<ul>
+    <li>shape: (string) The shape for this LFO (options: 'sine', 'tri', 'up', 'down', 'square', 'random'; default: 'sine')</li>
+    <li>min: (number) The minimum bound for this LFO (default: 0)</li>
+    <li>max: (number) The maximum bound for this LFO (default: 1)</li>
+    <li>depth: (number) The depth of modulation between min/max (range: 0.0 to 1.0; default: 0.0)</li>
+    <li>mode: (string) How to advance the LFO (options: 'clocked', 'free'; default: 'clocked')</li>
+    <li>period: (number) The timing of this LFO's advancement. If mode is 'clocked', argument is in beats. If mode is 'free', argument is in seconds.</li>
+    <li>action: (function) A callback function to perform as the LFO advances. This library passes both the scaled and the raw value to the callback function.</li>
+    <li>phase: (number) The phase shift amount for this LFO (range: 0.0 to 1.0,; default: 0)</li>
+    <li>baseline: (string) From where the LFO should start (options: 'min', 'center', 'max'; default: 'min')</li>
+</ul>
+
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+
+
+
         </li>
     </ul>
 
@@ -346,7 +340,7 @@
 </dd>
     <dt>
     <a name = "LFO:add_params"></a>
-    <strong>LFO:add_params (id[, separator[, group]])</strong>
+    <strong>LFO:add_params (id[, sep[, group]])</strong>
     </dt>
     <dd>
     Build parameter menu UI for an already-constructed LFO.
@@ -358,7 +352,7 @@
             <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
          The parameter ID to use for this LFO.
         </li>
-        <li><span class="parameter">separator</span>
+        <li><span class="parameter">sep</span>
             <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
          A separator name for the LFO parameters.
          (<em>optional</em>)
@@ -382,7 +376,7 @@
 </div> <!-- id="main" -->
 <div id="about">
 <i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
-<i style="float:right;">Last updated 2024-09-29 18:41:13 </i>
+<i style="float:right;">Last updated 2024-09-29 19:54:01 </i>
 </div> <!-- id="about" -->
 </div> <!-- id="container" -->
 </body>

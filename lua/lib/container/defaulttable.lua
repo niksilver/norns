@@ -1,4 +1,4 @@
--- DefaultTable - a table which provides a default value initialization for each key
+--- DefaultTable - a table which provides a default value initialization for each key
 -- @module DefaultTable
 -- @alias DefaultTable
 

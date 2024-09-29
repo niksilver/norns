@@ -90,7 +90,7 @@ local dopred = function(p)
 end
 
 
---- pre-methods (chain into :loop etc)
+-- pre-methods (chain into :loop etc)
 -- works in all tl modes
 
 -- launch quantization to lock to a clock.sync
@@ -192,7 +192,7 @@ function TL:_real(t)
 end
 
 
---- post methods for operating on any tl object
+-- post methods for operating on any tl object
 
 -- stop a playing timeline
 -- NOTE: doesn't destroy the timeline. allows it to be restarted with :play

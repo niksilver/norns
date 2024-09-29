@@ -579,6 +579,7 @@ end
 --- delete from disk.
 -- @param filename either an absolute path, a number (for [scriptname]-[number].pset in local data folder) or nil (for default [scriptname].pset in local data folder)
 -- @tparam string name
+-- @param pset_number
 function ParamSet:delete(filename, name, pset_number)
   if type(filename) == "number" then
     local n = filename

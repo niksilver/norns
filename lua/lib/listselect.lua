@@ -4,6 +4,7 @@
 -- has [examples for this module](https://monome.org/docs/norns/reference/lib/listselect).
 --
 -- @module lib.listselect
+
 -- reroutes redraw/enc/key
 
 local ls = {}

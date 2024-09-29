@@ -174,8 +174,8 @@ Screen.text = function(str) _norns.screen_text(str) end
 --- draw left-aligned text, trimmed to specified width.
 -- (characters are removed from end of string until it fits.)
 -- uses currently selected font.
--- @tparam string str : text to write
--- @tparam number w: width 
+-- @tparam string str text to write
+-- @tparam number w width 
 Screen.text_trim = function(str, w) _norns.screen_text_trim(str, w) end
 
 --- draw text (left aligned) and rotated.
@@ -394,7 +394,7 @@ _norns.screen_circle = function(x, y, r)
 end
 
 --- export screenshot
--- @param filename: saved to dust/data/(script)/(filename).png
+-- @param filename saved to dust/data/(script)/(filename).png
 Screen.export_screenshot = function(filename) _norns.screen_export_screenshot(norns.state.data..filename..'.png') end
 
 --- display png
@@ -458,7 +458,7 @@ end
 Screen.poke = function(x, y, w, h, s) _norns.screen_poke(x, y, w, h, s) end
 
 --- rotate
--- @tparam number radians
+-- @tparam number r radians
 Screen.rotate = function(r) _norns.screen_rotate(r) end
 
 --- move origin position

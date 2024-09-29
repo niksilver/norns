@@ -415,7 +415,7 @@ end
 function Midi.update_clock_receive()
   local x = norns.state.clock.midi_in
   if x == 1 then
-    --- enable all devices
+    -- enable all devices
     for _, dev in pairs(Midi.devices) do
       dev:clock_receive(1)
     end

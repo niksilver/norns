@@ -26,6 +26,7 @@
 <br/>
 <h1>norns</h1>
 
+
 <ul>
   <li><a href="../index.html">Index</a></li>
 </ul>
@@ -80,6 +81,7 @@
   <li><a href="../modules/lib.filters.html">lib.filters</a></li>
   <li><a href="../modules/lib.formatters.html">lib.formatters</a></li>
   <li><a href="../modules/lib.Graph.html">lib.Graph</a></li>
+  <li><a href="../modules/lib.hotswap.html">lib.hotswap</a></li>
   <li><a href="../modules/lib.intonation.html">lib.intonation</a></li>
   <li><a href="../modules/Lattice.html">Lattice</a></li>
   <li><a href="../modules/lib.lfo.html">lib.lfo</a></li>
@@ -104,7 +106,9 @@
 
 <h1>Module <code>audio</code></h1>
 <p>Audio class</p>
-<p></p>
+<p>
+
+</p>
 
 
 <h2><a href="#Functions">Functions</a></h2>
@@ -119,11 +123,11 @@
 	</tr>
 	<tr>
 	<td class="name" nowrap><a href="#Audio.level_dac">Audio.level_dac (level)</a></td>
-	<td class="summary">set level for *both* output channels.</td>
+	<td class="summary">set level for <em>both</em> output channels.</td>
 	</tr>
 	<tr>
 	<td class="name" nowrap><a href="#Audio.level_monitor">Audio.level_monitor (level)</a></td>
-	<td class="summary">set monitor level for *both* input channels.</td>
+	<td class="summary">set monitor level for <em>both</em> input channels.</td>
 	</tr>
 	<tr>
 	<td class="name" nowrap><a href="#Audio.monitor_mono">Audio.monitor_mono ()</a></td>
@@ -323,7 +327,7 @@
     <strong>Audio.level_dac (level)</strong>
     </dt>
     <dd>
-    set level for *both* output channels.
+    set level for <em>both</em> output channels.
 
 
     <h3>Parameters:</h3>
@@ -343,7 +347,7 @@
     <strong>Audio.level_monitor (level)</strong>
     </dt>
     <dd>
-    set monitor level for *both* input channels.
+    set monitor level for <em>both</em> input channels.
 
 
     <h3>Parameters:</h3>
@@ -515,6 +519,8 @@
         <li><span class="parameter">val</span>
             <span class="types"><span class="type">number</span></span>
 
+
+
         </li>
     </ul>
 
@@ -535,6 +541,8 @@
     <ul>
         <li><span class="parameter">val</span>
             <span class="types"><span class="type">number</span></span>
+
+
 
         </li>
     </ul>
@@ -557,6 +565,8 @@
         <li><span class="parameter">val</span>
             <span class="types"><span class="type">number</span></span>
 
+
+
         </li>
     </ul>
 
@@ -578,6 +588,8 @@
         <li><span class="parameter">val</span>
             <span class="types"><span class="type">number</span></span>
 
+
+
         </li>
     </ul>
 
@@ -597,11 +609,15 @@
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">name</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
 
         </li>
         <li><span class="parameter">val</span>
             <span class="types"><span class="type">number</span></span>
+
+
 
         </li>
     </ul>
@@ -652,6 +668,8 @@
         <li><span class="parameter">val</span>
             <span class="types"><span class="type">number</span></span>
 
+
+
         </li>
     </ul>
 
@@ -671,11 +689,15 @@
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">name</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
 
         </li>
         <li><span class="parameter">val</span>
             <span class="types"><span class="type">number</span></span>
+
+
 
         </li>
     </ul>
@@ -700,6 +722,8 @@
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">file</span>
+
+
 
         </li>
     </ul>
@@ -748,6 +772,8 @@
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">file</span>
+
+
 
         </li>
     </ul>
@@ -802,6 +828,8 @@
         <li><span class="parameter">value</span>
             <span class="types"><span class="type">number</span></span>
 
+
+
         </li>
     </ul>
 
@@ -822,6 +850,8 @@
     <ul>
         <li><span class="parameter">value</span>
             <span class="types"><span class="type">number</span></span>
+
+
 
         </li>
     </ul>
@@ -844,6 +874,8 @@
         <li><span class="parameter">value</span>
             <span class="types"><span class="type">number</span></span>
 
+
+
         </li>
     </ul>
 
@@ -864,6 +896,8 @@
     <ul>
         <li><span class="parameter">value</span>
             <span class="types"><span class="type">number</span></span>
+
+
 
         </li>
     </ul>
@@ -893,11 +927,17 @@
         </li>
         <li><span class="parameter">in2</span>
 
+
+
         </li>
         <li><span class="parameter">out1</span>
 
+
+
         </li>
         <li><span class="parameter">out2</span>
+
+
 
         </li>
     </ul>
@@ -964,7 +1004,7 @@
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">path</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
          (from dust directory)
         </li>
     </ul>
@@ -980,8 +1020,8 @@
 </div> <!-- id="content" -->
 </div> <!-- id="main" -->
 <div id="about">
-<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
-<i style="float:right;">Last updated 2023-11-17 11:40:11 </i>
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2024-09-29 17:27:44 </i>
 </div> <!-- id="about" -->
 </div> <!-- id="container" -->
 </body>

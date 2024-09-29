@@ -335,7 +335,7 @@ end
 -- @tparam integer root_num MIDI note number (0-127) defining the key.
 -- @tparam string scale_type String defining scale type (eg, "Major", "Dorian".)
 -- @tparam string roman_chord_type Roman-numeral-style string defining chord type (eg, "V", "iv7" or "III+")
---    including limited bass notes (e.g. "iv6-9") and lowercase-letter inversion notation (e.g. "IIb" for first inversion)
+--  including limited bass notes (e.g. "iv6-9") and lowercase-letter inversion notation (e.g. "IIb" for first inversion)
 -- @treturn {integer...} Array of MIDI note numbers.
 -- @see See MusicUtil.SCALES for the supported scale types and MusicUtil.CHORDS for the chords that can be returned.
 -- @see This function *can* return notes that are outside the scale and will not try to resolve ambiguous notation with
@@ -483,8 +483,8 @@ end
 --- system of tonal harmony from the European common-practice period.
 -- @tparam integer root_num MIDI note number (0-127) defining the key.
 -- @tparam string scale_type String defining scale type. Not all scales are supported; valid values 
---    are "Major" (or "Ionian"), "Natural Minor" (or "Minor" or "Aeolian"), "Harmonic Minor", 
---    "Melodic Minor", "Dorian", "Phrygian", "Lydian", "Mixolydian", or "Locrian".
+--   are "Major" (or "Ionian"), "Natural Minor" (or "Minor" or "Aeolian"), "Harmonic Minor", 
+--   "Melodic Minor", "Dorian", "Phrygian", "Lydian", "Mixolydian", or "Locrian".
 -- @tparam integer degree Number between 1-7 selecting the degree of the chord.
 -- @tparam[opt] boolean seventh Return the 7th chord if set to true (optional)
 -- @treturn {integer...} Array of MIDI note numbers.

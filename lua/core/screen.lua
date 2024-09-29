@@ -216,7 +216,7 @@ end
 Screen.current_point = function() return _norns.screen_current_point() end
 
 --- select font face.
--- @param index font face (see list, or Screen.font_face_names)
+-- @param index font face (see list, or Screen.font\_face\_names)
 --
 -- 1 norns (default)
 -- 2 ALEPH

@@ -26,6 +26,7 @@
 <br/>
 <h1>norns</h1>
 
+
 <ul>
   <li><a href="../index.html">Index</a></li>
 </ul>
@@ -75,6 +76,7 @@
   <li><a href="../modules/lib.filters.html">lib.filters</a></li>
   <li><a href="../modules/lib.formatters.html">lib.formatters</a></li>
   <li><a href="../modules/lib.Graph.html">lib.Graph</a></li>
+  <li><a href="../modules/lib.hotswap.html">lib.hotswap</a></li>
   <li><a href="../modules/lib.intonation.html">lib.intonation</a></li>
   <li><a href="../modules/Lattice.html">Lattice</a></li>
   <li><a href="../modules/lib.lfo.html">lib.lfo</a></li>
@@ -775,7 +777,7 @@
     stroke current path.
  uses currently selected color.
  after this call the current path will be cleared, so the 'relative' functions
- (`move_rel`, `line_rel` and `curve_rel`) won't work - use their absolute
+ (<a href="../modules/screen.html#Screen.move_rel">move_rel</a>, <a href="../modules/screen.html#Screen.line_rel">line_rel</a> and <a href="../modules/screen.html#Screen.curve_rel">curve_rel</a>) won't work - use their absolute
  alternatives instead.
 
 
@@ -793,7 +795,7 @@
     fill current path.
  uses currently selected color.
  after this call the current path will be cleared, so the 'relative' functions
- (`move_rel`, `line_rel` and `curve_rel`) won't work - use their absolute
+ (<a href="../modules/screen.html#Screen.move_rel">move_rel</a>, <a href="../modules/screen.html#Screen.line_rel">line_rel</a> and <a href="../modules/screen.html#Screen.curve_rel">curve_rel</a>) won't work - use their absolute
  alternatives instead.
 
 
@@ -815,7 +817,7 @@
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">str</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
          : text to write
         </li>
     </ul>
@@ -838,7 +840,7 @@
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">str</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
          : text to write
         </li>
         <li><span class="parameter">w:</span>
@@ -872,7 +874,7 @@
          y position
         </li>
         <li><span class="parameter">str</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
          : text to write
         </li>
         <li><span class="parameter">degrees</span>
@@ -898,7 +900,7 @@
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">str</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
          : text to write.
         </li>
     </ul>
@@ -920,7 +922,7 @@
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">str</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
          : text to write
         </li>
     </ul>
@@ -950,7 +952,7 @@
          y position
         </li>
         <li><span class="parameter">str</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
          : text to write
         </li>
         <li><span class="parameter">degrees</span>
@@ -975,7 +977,7 @@
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">str</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
          : text to calculate width of
         </li>
     </ul>
@@ -996,7 +998,8 @@
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">index</span>
-         font face (see list, or Screen.font_face_names)
+         font face (see list, or Screen.font_face_names)</p>
+
 <p> 1 norns (default)
  2 ALEPH
  3 Roboto Thin
@@ -1152,6 +1155,8 @@
     <ul>
         <li><span class="parameter">filename</span>
 
+
+
         </li>
         <li><span class="parameter">x</span>
             <span class="types"><span class="type">number</span></span>
@@ -1179,6 +1184,8 @@
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">filename</span>
+
+
 
         </li>
     </ul>
@@ -1225,6 +1232,8 @@
     <ul>
         <li><span class="parameter">image</span>
 
+
+
         </li>
         <li><span class="parameter">x</span>
             <span class="types"><span class="type">number</span></span>
@@ -1252,6 +1261,8 @@
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">image</span>
+
+
 
         </li>
         <li><span class="parameter">left</span>
@@ -1370,7 +1381,7 @@
          height
         </li>
         <li><span class="parameter">s</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
          screen content to set
         </li>
     </ul>
@@ -1392,6 +1403,8 @@
     <ul>
         <li><span class="parameter">radians</span>
             <span class="types"><span class="type">number</span></span>
+
+
 
         </li>
     </ul>
@@ -1452,22 +1465,38 @@
     <ul>
         <li><span class="parameter">index</span>
             <span class="types"><span class="type">number/string</span></span>
-         blending mode (see list), strings are case-insensitive, include '_' between words
-<p> more info at https://www.cairographics.org/operators/
-<p> there are other operators available, see the above link or use tab.print(screen.BLEND_MODES) in the REPL for the full list.
-<p> 0 Over (default)
-<p> 1 XOR: clears any overlapping pixels.
-<p> 2 Add: adds together the alpha (brightness) of overlapping pixels.
-<p> 3 Multiply: multiplies the colors of overlapping pixels, the result is always darker than the two inputs.
-<p> 4 Screen: the colors of overlapping pixels are complemented, multiplied, then their product is complimented. the result is always lighter than the two inputs.
-<p> 5 Overlay: multiplies colors if destination pixel level is >= 8, screens colors if destination pixel level is < 8.
-<p> 6 Darken: keeps the darker value of overlapping pixels.
-<p> 7 Lighten: keeps the lighter value of overlapping pixels.
-<p> 8 Color_Dodge: brightens pixels being drawn over.
-<p> 9 Color_Burn: darkens pixels being drawn over.
-<p> 10 Hard_Light: multiplies colors if source pixel level is >= 8, screens colors if source pixel level is < 8.
-<p> 11 Soft_Light: uses Darken or Lighten depending on the color of the source pixel.
-<p> 12 Difference: the result is the absolute value of the difference of the destination and source pixels.
+         blending mode (see list), strings are case-insensitive, include '_' between words</p>
+
+<p> more info at https://www.cairographics.org/operators/</p>
+
+<p> there are other operators available, see the above link or use tab.print(screen.BLEND_MODES) in the REPL for the full list.</p>
+
+<p> 0 Over (default)</p>
+
+<p> 1 XOR: clears any overlapping pixels.</p>
+
+<p> 2 Add: adds together the alpha (brightness) of overlapping pixels.</p>
+
+<p> 3 Multiply: multiplies the colors of overlapping pixels, the result is always darker than the two inputs.</p>
+
+<p> 4 Screen: the colors of overlapping pixels are complemented, multiplied, then their product is complimented. the result is always lighter than the two inputs.</p>
+
+<p> 5 Overlay: multiplies colors if destination pixel level is >= 8, screens colors if destination pixel level is &lt; 8.</p>
+
+<p> 6 Darken: keeps the darker value of overlapping pixels.</p>
+
+<p> 7 Lighten: keeps the lighter value of overlapping pixels.</p>
+
+<p> 8 Color_Dodge: brightens pixels being drawn over.</p>
+
+<p> 9 Color_Burn: darkens pixels being drawn over.</p>
+
+<p> 10 Hard_Light: multiplies colors if source pixel level is >= 8, screens colors if source pixel level is &lt; 8.</p>
+
+<p> 11 Soft_Light: uses Darken or Lighten depending on the color of the source pixel.</p>
+
+<p> 12 Difference: the result is the absolute value of the difference of the destination and source pixels.</p>
+
 <p> 13 Exclusion: similar to Difference, but has lower contrast.
         </li>
     </ul>
@@ -1478,12 +1507,12 @@
     <h3>Usage:</h3>
     <ul>
         <li><pre class="example"><span class="comment">-- number vs. string input
-</span>screen.blend_mode(<span class="number">0</span>)
-screen.blend_mode(<span class="string">'over'</span>)</pre></li>
+</span>screen.<span class="function-name">blend_mode</span>(<span class="number">0</span>)
+screen.<span class="function-name">blend_mode</span>(<span class="string">'over'</span>)</pre></li>
         <li><pre class="example"><span class="comment">-- case-insensitivity
-</span>screen.blend_mode(<span class="string">'hard_light'</span>)
-screen.blend_mode(<span class="string">'hArD_lIgHt'</span>)
-screen.blend_mode(<span class="string">'HARD_LIGHT'</span>)</pre></li>
+</span>screen.<span class="function-name">blend_mode</span>(<span class="string">'hard_light'</span>)
+screen.<span class="function-name">blend_mode</span>(<span class="string">'hArD_lIgHt'</span>)
+screen.<span class="function-name">blend_mode</span>(<span class="string">'HARD_LIGHT'</span>)</pre></li>
     </ul>
 
 </dd>
@@ -1493,8 +1522,8 @@ screen.blend_mode(<span class="string">'HARD_LIGHT'</span>)</pre></li>
 </div> <!-- id="content" -->
 </div> <!-- id="main" -->
 <div id="about">
-<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
-<i style="float:right;">Last updated 2023-11-17 11:40:11 </i>
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2024-09-29 17:27:44 </i>
 </div> <!-- id="about" -->
 </div> <!-- id="container" -->
 </body>

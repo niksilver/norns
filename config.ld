@@ -9,6 +9,7 @@ title='norns/docs'
 --]]
 file = 'lua'
 style='!pale'
+format='markdown'
 
 -- trying to trick ldoc into processing supercollider classes :S
 add_language_extension('sc', 'c')

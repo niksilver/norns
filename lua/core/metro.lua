@@ -1,4 +1,8 @@
 --- high-resolution metro API
+--
+-- The [norns script reference](https://monome.org/docs/norns/reference/)
+-- has [examples for this module](https://monome.org/docs/norns/reference/metro).
+--
 -- @module metro
 
 local Metro = {}

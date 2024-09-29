@@ -1,4 +1,8 @@
 --- Grid class
+--
+-- The [norns script reference](https://monome.org/docs/norns/reference/)
+-- has [examples for this module](https://monome.org/docs/norns/reference/grid).
+--
 -- @module grid
 
 local vport = require 'vport'

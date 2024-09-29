@@ -1,4 +1,9 @@
 --- Control class
+--
+-- See also the [norns script reference](https://monome.org/docs/norns/reference/)
+-- which has
+-- [examples for using params](https://monome.org/docs/norns/reference/params).
+--
 -- @module params.control
 
 local ControlSpec = require 'core/controlspec'

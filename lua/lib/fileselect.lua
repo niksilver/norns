@@ -1,4 +1,8 @@
 --- fileselect utility
+--
+-- The [norns script reference](https://monome.org/docs/norns/reference/)
+-- has [examples for this module](https://monome.org/docs/norns/reference/lib/fileselect).
+--
 -- @module lib.fileselect
 -- reroutes redraw/enc/key
 

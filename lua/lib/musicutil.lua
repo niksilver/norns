@@ -1,5 +1,8 @@
 --- Music utility module.
+--
 -- Utility methods for working with notes, scales and chords.
+-- The [norns script reference](https://monome.org/docs/norns/reference/)
+-- has [examples for this module](https://monome.org/docs/norns/reference/lib/musicutil).
 --
 -- @module lib.MusicUtil
 -- @release v1.1.2

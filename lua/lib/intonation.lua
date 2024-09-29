@@ -1,4 +1,8 @@
 --- "just" some intonation tables
+--
+-- The [norns script reference](https://monome.org/docs/norns/reference/)
+-- has [examples for this module](https://monome.org/docs/norns/reference/lib/intonation).
+--
 -- @module lib.intonation
 -- @alias JI
 

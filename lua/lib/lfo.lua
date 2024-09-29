@@ -1,7 +1,12 @@
--- LFOs for general-purpose scripting
--- @module lib.lfo
+--- LFOs for general-purpose scripting
+--
 -- inspired by contributions from @markwheeler (changes), @justmat (hnds), and @sixolet (toolkit)
 -- added by @dndrks + @sixolet, with improvements by @Dewb and @sonoCircuit
+--
+-- The [norns script reference](https://monome.org/docs/norns/reference/)
+-- has [examples for this module](https://monome.org/docs/norns/reference/lib/lfo).
+--
+-- @module lib.lfo
 
 local lattice = require 'lattice'
 

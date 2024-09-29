@@ -1,5 +1,8 @@
 --- UI widgets module.
+--
 -- Widgets for paging, tabs, lists, dials, sliders, etc.
+-- The [norns script reference](https://monome.org/docs/norns/reference/)
+-- has [examples for this module](https://monome.org/docs/norns/reference/lib/ui).
 --
 -- @module lib.UI
 -- @release v1.0.2

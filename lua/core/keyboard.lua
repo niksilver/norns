@@ -1,4 +1,8 @@
 --- keyboard (typing, not piano)
+--
+-- The [norns script reference](https://monome.org/docs/norns/reference/)
+-- has [examples for this module](https://monome.org/docs/norns/reference/keyboard).
+--
 -- @module keyboard
 
 local tab = require 'tabutil'

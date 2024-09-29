@@ -1,5 +1,8 @@
 ---- module for creating a lattice of sprockets based on a single fast "superclock"
 --
+-- The [norns script reference](https://monome.org/docs/norns/reference/)
+-- has [examples for this module](https://monome.org/docs/norns/reference/lib/lattice).
+--
 -- @module Lattice
 -- @release v2.0
 -- @author tyleretters & ezra & zack & rylee

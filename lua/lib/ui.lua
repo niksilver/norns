@@ -4,7 +4,7 @@
 -- The [norns script reference](https://monome.org/docs/norns/reference/)
 -- has [examples for this module](https://monome.org/docs/norns/reference/lib/ui).
 --
--- @module lib.UI
+-- @module lib.ui
 -- @release v1.0.2
 -- @author Mark Eats
 

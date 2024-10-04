@@ -66,8 +66,8 @@
   <li><a href="../modules/lib.container.defaulttable.html">lib.container.defaulttable</a></li>
   <li><a href="../modules/lib.container.deque.html">lib.container.deque</a></li>
   <li><strong>lib.container.observable</strong></li>
-  <li><a href="../modules/WatchTable.html">WatchTable</a></li>
-  <li><a href="../modules/weaktable.html">weaktable</a></li>
+  <li><a href="../modules/lib.container.watchtable.html">lib.container.watchtable</a></li>
+  <li><a href="../modules/lib.container.weaktable.html">lib.container.weaktable</a></li>
   <li><a href="../modules/lib.elca.html">lib.elca</a></li>
   <li><a href="../modules/lib.EnvGraph.html">lib.EnvGraph</a></li>
   <li><a href="../modules/lib.er.html">lib.er</a></li>
@@ -76,9 +76,8 @@
   <li><a href="../modules/lib.filters.html">lib.filters</a></li>
   <li><a href="../modules/lib.formatters.html">lib.formatters</a></li>
   <li><a href="../modules/lib.Graph.html">lib.Graph</a></li>
-  <li><a href="../modules/lib.hotswap.html">lib.hotswap</a></li>
   <li><a href="../modules/lib.intonation.html">lib.intonation</a></li>
-  <li><a href="../modules/Lattice.html">Lattice</a></li>
+  <li><a href="../modules/lib.lattice.html">lib.lattice</a></li>
   <li><a href="../modules/lib.lfo.html">lib.lfo</a></li>
   <li><a href="../modules/lib.listselect.html">lib.listselect</a></li>
   <li><a href="../modules/lib.MusicUtil.html">lib.MusicUtil</a></li>
@@ -100,38 +99,44 @@
 <div id="content">
 
 <h1>Module <code>lib.container.observable</code></h1>
-<p>Create an Observable value (object).</p>
-<p> An observable value notifies registered observers each time the value is set.</p>
+<p>observable - an observable value</p>
+<p>
+
+</p>
 
 
 <h2><a href="#Functions">Functions</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#Observable:set">Observable:set (value, quiet)</a></td>
+	<td class="name" nowrap><a href="#new">new (initial)</a></td>
+	<td class="summary">Create an Observable value (object).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set">set (value, quiet)</a></td>
 	<td class="summary">Set the value</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#Observable:__call">Observable:__call ()</a></td>
+	<td class="name" nowrap><a href="#__call">__call ()</a></td>
 	<td class="summary">Return the current value (short hand for the 'value' method)</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#Observable:value">Observable:value ()</a></td>
+	<td class="name" nowrap><a href="#value">value ()</a></td>
 	<td class="summary">Return the current value</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#Observable:register">Observable:register (observer, handler)</a></td>
+	<td class="name" nowrap><a href="#register">register (observer, handler)</a></td>
 	<td class="summary">Register an observer of value changes</p>
 
 <p> An observer is identified by a key which can be any type (number, string,
  table, etc).</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#Observable:unregister">Observable:unregister (observer)</a></td>
+	<td class="name" nowrap><a href="#unregister">unregister (observer)</a></td>
 	<td class="summary">Unregister an observer of value changes</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#Observable:notify_observers">Observable:notify_observers ()</a></td>
-	<td class="summary">Notify registered observers of current value (normally called by <a href="../modules/lib.container.observable.html#Observable:set">set</a>).</td>
+	<td class="name" nowrap><a href="#notify_observers">notify_observers ()</a></td>
+	<td class="summary">Notify registered observers of current value (normally called by <a href="../modules/lib.container.observable.html#set">set</a>).</td>
 	</tr>
 </table>
 
@@ -143,8 +148,37 @@
 
     <dl class="function">
     <dt>
-    <a name = "Observable:set"></a>
-    <strong>Observable:set (value, quiet)</strong>
+    <a name = "new"></a>
+    <strong>new (initial)</strong>
+    </dt>
+    <dd>
+    Create an Observable value (object). </p>
+
+<p> An observable value notifies registered observers each time the value is set.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">initial</span>
+            <span class="types"><span class="type">anything</span></span>
+         Initial value, defaults to nil
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">Observable</span></span>
+        instance.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "set"></a>
+    <strong>set (value, quiet)</strong>
     </dt>
     <dd>
     Set the value
@@ -168,8 +202,8 @@
 
 </dd>
     <dt>
-    <a name = "Observable:__call"></a>
-    <strong>Observable:__call ()</strong>
+    <a name = "__call"></a>
+    <strong>__call ()</strong>
     </dt>
     <dd>
     Return the current value (short hand for the 'value' method)
@@ -190,8 +224,8 @@
 
 </dd>
     <dt>
-    <a name = "Observable:value"></a>
-    <strong>Observable:value ()</strong>
+    <a name = "value"></a>
+    <strong>value ()</strong>
     </dt>
     <dd>
     Return the current value
@@ -212,8 +246,8 @@
 
 </dd>
     <dt>
-    <a name = "Observable:register"></a>
-    <strong>Observable:register (observer, handler)</strong>
+    <a name = "register"></a>
+    <strong>register (observer, handler)</strong>
     </dt>
     <dd>
     Register an observer of value changes</p>
@@ -245,8 +279,8 @@
 
 </dd>
     <dt>
-    <a name = "Observable:unregister"></a>
-    <strong>Observable:unregister (observer)</strong>
+    <a name = "unregister"></a>
+    <strong>unregister (observer)</strong>
     </dt>
     <dd>
     Unregister an observer of value changes
@@ -272,11 +306,11 @@
 
 </dd>
     <dt>
-    <a name = "Observable:notify_observers"></a>
-    <strong>Observable:notify_observers ()</strong>
+    <a name = "notify_observers"></a>
+    <strong>notify_observers ()</strong>
     </dt>
     <dd>
-    Notify registered observers of current value (normally called by <a href="../modules/lib.container.observable.html#Observable:set">set</a>).
+    Notify registered observers of current value (normally called by <a href="../modules/lib.container.observable.html#set">set</a>).
 
 
 
@@ -292,7 +326,7 @@
 </div> <!-- id="main" -->
 <div id="about">
 <i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
-<i style="float:right;">Last updated 2024-09-29 19:41:25 </i>
+<i style="float:right;">Last updated 2024-10-04 19:37:18 </i>
 </div> <!-- id="about" -->
 </div> <!-- id="container" -->
 </body>

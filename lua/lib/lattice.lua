@@ -3,7 +3,7 @@
 -- The [norns script reference](https://monome.org/docs/norns/reference/)
 -- has [examples for this module](https://monome.org/docs/norns/reference/lib/lattice).
 --
--- @module lib.Lattice
+-- @module lib.lattice
 -- @release v2.0
 -- @author tyleretters & ezra & zack & rylee
 

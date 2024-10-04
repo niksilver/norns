@@ -65,8 +65,8 @@
   <li><a href="../modules/lib.BeatClock.html">lib.BeatClock</a></li>
   <li><a href="../modules/lib.container.defaulttable.html">lib.container.defaulttable</a></li>
   <li><a href="../modules/lib.container.deque.html">lib.container.deque</a></li>
-  <li><a href="../modules/lib.observable.html">lib.observable</a></li>
-  <li><a href="../modules/lib.container.WatchTable.html">lib.container.WatchTable</a></li>
+  <li><a href="../modules/lib.container.observable.html">lib.container.observable</a></li>
+  <li><a href="../modules/lib.container.watchtable.html">lib.container.watchtable</a></li>
   <li><a href="../modules/lib.container.weaktable.html">lib.container.weaktable</a></li>
   <li><a href="../modules/lib.elca.html">lib.elca</a></li>
   <li><a href="../modules/lib.EnvGraph.html">lib.EnvGraph</a></li>
@@ -76,9 +76,8 @@
   <li><a href="../modules/lib.filters.html">lib.filters</a></li>
   <li><a href="../modules/lib.formatters.html">lib.formatters</a></li>
   <li><a href="../modules/lib.Graph.html">lib.Graph</a></li>
-  <li><a href="../modules/lib.hotswap.html">lib.hotswap</a></li>
   <li><a href="../modules/lib.intonation.html">lib.intonation</a></li>
-  <li><strong>Lattice</strong></li>
+  <li><strong>lib.lattice</strong></li>
   <li><a href="../modules/lib.lfo.html">lib.lfo</a></li>
   <li><a href="../modules/lib.listselect.html">lib.listselect</a></li>
   <li><a href="../modules/lib.MusicUtil.html">lib.MusicUtil</a></li>
@@ -99,7 +98,7 @@
 
 <div id="content">
 
-<h1>Module <code>Lattice</code></h1>
+<h1>Module <code>lib.lattice</code></h1>
 <p>module for creating a lattice of sprockets based on a single fast "superclock"</p>
 <p> The <a href="https://monome.org/docs/norns/reference/">norns script reference</a>
  has <a href="https://monome.org/docs/norns/reference/lib/lattice">examples for this module</a>.</p>
@@ -113,55 +112,55 @@
 <h2><a href="#Functions">Functions</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#new">new ([args])</a></td>
+	<td class="name" nowrap><a href="#Lattice:new">Lattice:new ([args])</a></td>
 	<td class="summary">instantiate a new lattice</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#start">start ()</a></td>
+	<td class="name" nowrap><a href="#Lattice:start">Lattice:start ()</a></td>
 	<td class="summary">start running the lattice</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#reset">reset ()</a></td>
+	<td class="name" nowrap><a href="#Lattice:reset">Lattice:reset ()</a></td>
 	<td class="summary">reset the norns clock without restarting lattice</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#hard_restart">hard_restart ()</a></td>
+	<td class="name" nowrap><a href="#Lattice:hard_restart">Lattice:hard_restart ()</a></td>
 	<td class="summary">reset the norns clock and restart lattice</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#stop">stop ()</a></td>
+	<td class="name" nowrap><a href="#Lattice:stop">Lattice:stop ()</a></td>
 	<td class="summary">stop the lattice</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#toggle">toggle ()</a></td>
+	<td class="name" nowrap><a href="#Lattice:toggle">Lattice:toggle ()</a></td>
 	<td class="summary">toggle the lattice</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#destroy">destroy ()</a></td>
+	<td class="name" nowrap><a href="#Lattice:destroy">Lattice:destroy ()</a></td>
 	<td class="summary">destroy the lattice</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#set_meter">set_meter (_)</a></td>
+	<td class="name" nowrap><a href="#Lattice:set_meter">Lattice:set_meter (_)</a></td>
 	<td class="summary">set_meter is deprecated</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#auto_pulse">auto_pulse (s)</a></td>
+	<td class="name" nowrap><a href="#Lattice.auto_pulse">Lattice.auto_pulse (s)</a></td>
 	<td class="summary">use the norns clock to pulse</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#pulse">pulse ()</a></td>
+	<td class="name" nowrap><a href="#Lattice:pulse">Lattice:pulse ()</a></td>
 	<td class="summary">advance all sprockets in this lattice a single by pulse, call this manually if lattice.auto = false</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#new_sprocket">new_sprocket ([args])</a></td>
+	<td class="name" nowrap><a href="#Lattice:new_sprocket">Lattice:new_sprocket ([args])</a></td>
 	<td class="summary">factory method to add a new sprocket to this lattice</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#new_pattern">new_pattern (args)</a></td>
+	<td class="name" nowrap><a href="#Lattice:new_pattern">Lattice:new_pattern (args)</a></td>
 	<td class="summary">new_pattern is deprecated</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#order_sprockets">order_sprockets ()</a></td>
+	<td class="name" nowrap><a href="#Lattice:order_sprockets">Lattice:order_sprockets ()</a></td>
 	<td class="summary">"private" method to keep numerical order of the sprocket ids
  for use when pulsing</td>
 	</tr>
@@ -211,8 +210,8 @@
 
     <dl class="function">
     <dt>
-    <a name = "new"></a>
-    <strong>new ([args])</strong>
+    <a name = "Lattice:new"></a>
+    <strong>Lattice:new ([args])</strong>
     </dt>
     <dd>
     instantiate a new lattice
@@ -241,8 +240,8 @@
 
 </dd>
     <dt>
-    <a name = "start"></a>
-    <strong>start ()</strong>
+    <a name = "Lattice:start"></a>
+    <strong>Lattice:start ()</strong>
     </dt>
     <dd>
     start running the lattice
@@ -255,8 +254,8 @@
 
 </dd>
     <dt>
-    <a name = "reset"></a>
-    <strong>reset ()</strong>
+    <a name = "Lattice:reset"></a>
+    <strong>Lattice:reset ()</strong>
     </dt>
     <dd>
     reset the norns clock without restarting lattice
@@ -269,8 +268,8 @@
 
 </dd>
     <dt>
-    <a name = "hard_restart"></a>
-    <strong>hard_restart ()</strong>
+    <a name = "Lattice:hard_restart"></a>
+    <strong>Lattice:hard_restart ()</strong>
     </dt>
     <dd>
     reset the norns clock and restart lattice
@@ -283,8 +282,8 @@
 
 </dd>
     <dt>
-    <a name = "stop"></a>
-    <strong>stop ()</strong>
+    <a name = "Lattice:stop"></a>
+    <strong>Lattice:stop ()</strong>
     </dt>
     <dd>
     stop the lattice
@@ -297,8 +296,8 @@
 
 </dd>
     <dt>
-    <a name = "toggle"></a>
-    <strong>toggle ()</strong>
+    <a name = "Lattice:toggle"></a>
+    <strong>Lattice:toggle ()</strong>
     </dt>
     <dd>
     toggle the lattice
@@ -311,8 +310,8 @@
 
 </dd>
     <dt>
-    <a name = "destroy"></a>
-    <strong>destroy ()</strong>
+    <a name = "Lattice:destroy"></a>
+    <strong>Lattice:destroy ()</strong>
     </dt>
     <dd>
     destroy the lattice
@@ -325,8 +324,8 @@
 
 </dd>
     <dt>
-    <a name = "set_meter"></a>
-    <strong>set_meter (_)</strong>
+    <a name = "Lattice:set_meter"></a>
+    <strong>Lattice:set_meter (_)</strong>
     </dt>
     <dd>
     set_meter is deprecated
@@ -347,8 +346,8 @@
 
 </dd>
     <dt>
-    <a name = "auto_pulse"></a>
-    <strong>auto_pulse (s)</strong>
+    <a name = "Lattice.auto_pulse"></a>
+    <strong>Lattice.auto_pulse (s)</strong>
     </dt>
     <dd>
     use the norns clock to pulse
@@ -368,8 +367,8 @@
 
 </dd>
     <dt>
-    <a name = "pulse"></a>
-    <strong>pulse ()</strong>
+    <a name = "Lattice:pulse"></a>
+    <strong>Lattice:pulse ()</strong>
     </dt>
     <dd>
     advance all sprockets in this lattice a single by pulse, call this manually if lattice.auto = false
@@ -382,8 +381,8 @@
 
 </dd>
     <dt>
-    <a name = "new_sprocket"></a>
-    <strong>new_sprocket ([args])</strong>
+    <a name = "Lattice:new_sprocket"></a>
+    <strong>Lattice:new_sprocket ([args])</strong>
     </dt>
     <dd>
     factory method to add a new sprocket to this lattice
@@ -416,8 +415,8 @@
 
 </dd>
     <dt>
-    <a name = "new_pattern"></a>
-    <strong>new_pattern (args)</strong>
+    <a name = "Lattice:new_pattern"></a>
+    <strong>Lattice:new_pattern (args)</strong>
     </dt>
     <dd>
     new_pattern is deprecated
@@ -438,8 +437,8 @@
 
 </dd>
     <dt>
-    <a name = "order_sprockets"></a>
-    <strong>order_sprockets ()</strong>
+    <a name = "Lattice:order_sprockets"></a>
+    <strong>Lattice:order_sprockets ()</strong>
     </dt>
     <dd>
     "private" method to keep numerical order of the sprocket ids
@@ -624,7 +623,7 @@
 </div> <!-- id="main" -->
 <div id="about">
 <i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
-<i style="float:right;">Last updated 2024-09-29 19:47:08 </i>
+<i style="float:right;">Last updated 2024-10-04 19:42:16 </i>
 </div> <!-- id="about" -->
 </div> <!-- id="container" -->
 </body>

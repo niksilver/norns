@@ -5,6 +5,7 @@
 -- has [examples for this module](https://monome.org/docs/norns/reference/lib/musicutil).
 --
 -- @module lib.musicutil
+-- @alias MusicUtil
 -- @release v1.1.2
 -- @author Mark Eats
 

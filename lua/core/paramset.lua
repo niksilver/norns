@@ -5,6 +5,7 @@
 -- [examples for using params](https://monome.org/docs/norns/reference/params).
 --
 -- @module paramset
+-- @alias ParamSet
 
 local separator = require 'core/params/separator'
 local number = require 'core/params/number'

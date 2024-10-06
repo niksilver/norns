@@ -5,6 +5,7 @@
 -- has [examples for this module](https://monome.org/docs/norns/reference/lib/ui).
 --
 -- @module lib.ui
+-- @alias UI
 -- @release v1.0.2
 -- @author Mark Eats
 

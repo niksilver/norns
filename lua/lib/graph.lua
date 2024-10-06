@@ -2,6 +2,7 @@
 -- Flexible graph drawing for waves, points, bars, etc.
 --
 -- @module lib.graph
+-- @alias Graph
 -- @release v1.1.0
 -- @author Mark Eats
 

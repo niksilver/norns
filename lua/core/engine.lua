@@ -4,6 +4,7 @@
 -- has [examples for this module](https://monome.org/docs/norns/reference/engine).
 --
 -- @module engine
+-- @alias Engine
 
 local tab = require 'tabutil'
 

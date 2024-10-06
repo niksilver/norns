@@ -1,6 +1,7 @@
 --- Screen class
 -- subset of cairo drawing functions. see https://www.cairographics.org/tutorial/
 -- @module screen
+-- @alias Screen
 
 local Screen = {}
 

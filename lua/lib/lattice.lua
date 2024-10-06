@@ -4,6 +4,7 @@
 -- has [examples for this module](https://monome.org/docs/norns/reference/lib/lattice).
 --
 -- @module lib.lattice
+-- @alias Lattice
 -- @release v2.0
 -- @author tyleretters & ezra & zack & rylee
 

@@ -4,6 +4,7 @@
 -- has [examples for this module](https://monome.org/docs/norns/reference/osc).
 --
 -- @module osc
+-- @alias OSC
 
 local tab = require 'tabutil'
 local paramset = require 'core/paramset'

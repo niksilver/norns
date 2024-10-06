@@ -2,6 +2,7 @@
 --
 -- some filters that could be useful for musical event processing
 -- @module lib.filters
+-- @alias f
 
 local f = {}
 f.__index = f

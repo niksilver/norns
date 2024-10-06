@@ -7,6 +7,7 @@
 -- has [examples for this module](https://monome.org/docs/norns/reference/lib/lfo).
 --
 -- @module lib.lfo
+-- @alias LFO
 
 local lattice = require 'lattice'
 

@@ -4,6 +4,7 @@
 -- has [examples for this module](https://monome.org/docs/norns/reference/grid).
 --
 -- @module grid
+-- @alias Grid
 
 local vport = require 'vport'
 

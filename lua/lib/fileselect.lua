@@ -4,6 +4,7 @@
 -- has [examples for this module](https://monome.org/docs/norns/reference/lib/fileselect).
 --
 -- @module lib.fileselect
+-- @alias fs
 
 -- reroutes redraw/enc/key
 

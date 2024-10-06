@@ -108,103 +108,103 @@
 <h2><a href="#Functions">Functions</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.new">ControlSpec.new (min, max, warp, step, default, units, quantum, wrap)</a></td>
+	<td class="name" nowrap><a href="#new">new (min, max, warp, step, default, units, quantum, wrap)</a></td>
 	<td class="summary">constructor</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.def">ControlSpec.def (args)</a></td>
+	<td class="name" nowrap><a href="#def">def (args)</a></td>
 	<td class="summary">create generic controlspec
  helper function to create controlspec using a table of parameters</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec:map">ControlSpec:map (value)</a></td>
+	<td class="name" nowrap><a href="#map">map (value)</a></td>
 	<td class="summary">transform an incoming value between 0 and 1 through this ControlSpec</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec:unmap">ControlSpec:unmap (value)</a></td>
+	<td class="name" nowrap><a href="#unmap">unmap (value)</a></td>
 	<td class="summary">untransform a transformed value into its original value</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec:copy">ControlSpec:copy ()</a></td>
+	<td class="name" nowrap><a href="#copy">copy ()</a></td>
 	<td class="summary">copy this ControlSpec into a new one</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec:print">ControlSpec:print ()</a></td>
+	<td class="name" nowrap><a href="#print">print ()</a></td>
 	<td class="summary">print out the configuration of this ControlSpec</td>
 	</tr>
 </table>
 <h2><a href="#Presets">Presets </a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.UNIPOLAR">ControlSpec.UNIPOLAR</a></td>
+	<td class="name" nowrap><a href="#UNIPOLAR">UNIPOLAR</a></td>
 	<td class="summary">converts values to a unipolar range</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.BIPOLAR">ControlSpec.BIPOLAR</a></td>
+	<td class="name" nowrap><a href="#BIPOLAR">BIPOLAR</a></td>
 	<td class="summary">converts values to bipolar range</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.FREQ">ControlSpec.FREQ</a></td>
+	<td class="name" nowrap><a href="#FREQ">FREQ</a></td>
 	<td class="summary">converts to a frequency range</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.LOFREQ">ControlSpec.LOFREQ</a></td>
+	<td class="name" nowrap><a href="#LOFREQ">LOFREQ</a></td>
 	<td class="summary">converts to a low frequency range</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.MIDFREQ">ControlSpec.MIDFREQ</a></td>
+	<td class="name" nowrap><a href="#MIDFREQ">MIDFREQ</a></td>
 	<td class="summary">converts to a mid frequency range</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.WIDEFREQ">ControlSpec.WIDEFREQ</a></td>
+	<td class="name" nowrap><a href="#WIDEFREQ">WIDEFREQ</a></td>
 	<td class="summary">converts to an exponential frequency range from 0.1 to 20khz</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.PHASE">ControlSpec.PHASE</a></td>
+	<td class="name" nowrap><a href="#PHASE">PHASE</a></td>
 	<td class="summary">maps into pi for controlling phase values</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.RQ">ControlSpec.RQ</a></td>
+	<td class="name" nowrap><a href="#RQ">RQ</a></td>
 	<td class="summary">converts to an exponential RQ range</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.MIDI">ControlSpec.MIDI</a></td>
+	<td class="name" nowrap><a href="#MIDI">MIDI</a></td>
 	<td class="summary">converts to a MIDI range (default 64)</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.MIDINOTE">ControlSpec.MIDINOTE</a></td>
+	<td class="name" nowrap><a href="#MIDINOTE">MIDINOTE</a></td>
 	<td class="summary">converts to a range for MIDI notes (default 60)</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.MIDIVELOCITY">ControlSpec.MIDIVELOCITY</a></td>
+	<td class="name" nowrap><a href="#MIDIVELOCITY">MIDIVELOCITY</a></td>
 	<td class="summary">converts to a range for MIDI velocity (default 64)</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.DB">ControlSpec.DB</a></td>
+	<td class="name" nowrap><a href="#DB">DB</a></td>
 	<td class="summary">converts to a dB range</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.AMP">ControlSpec.AMP</a></td>
+	<td class="name" nowrap><a href="#AMP">AMP</a></td>
 	<td class="summary">converts to a linear amplitude range (0-1)</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.PAN">ControlSpec.PAN</a></td>
+	<td class="name" nowrap><a href="#PAN">PAN</a></td>
 	<td class="summary">converts to a panning range (-1 - 1)</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.DETUNE">ControlSpec.DETUNE</a></td>
+	<td class="name" nowrap><a href="#DETUNE">DETUNE</a></td>
 	<td class="summary">converts to a detune range</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.RATE">ControlSpec.RATE</a></td>
+	<td class="name" nowrap><a href="#RATE">RATE</a></td>
 	<td class="summary">converts to a sensible range for playback rate</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.BEATS">ControlSpec.BEATS</a></td>
+	<td class="name" nowrap><a href="#BEATS">BEATS</a></td>
 	<td class="summary">convert to a good range for beats</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#ControlSpec.DELAY">ControlSpec.DELAY</a></td>
+	<td class="name" nowrap><a href="#DELAY">DELAY</a></td>
 	<td class="summary">converts to a good range for delay</td>
 	</tr>
 </table>
@@ -217,8 +217,8 @@
 
     <dl class="function">
     <dt>
-    <a name = "ControlSpec.new"></a>
-    <strong>ControlSpec.new (min, max, warp, step, default, units, quantum, wrap)</strong>
+    <a name = "new"></a>
+    <strong>new (min, max, warp, step, default, units, quantum, wrap)</strong>
     </dt>
     <dd>
     constructor
@@ -274,8 +274,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec.def"></a>
-    <strong>ControlSpec.def (args)</strong>
+    <a name = "def"></a>
+    <strong>def (args)</strong>
     </dt>
     <dd>
     create generic controlspec
@@ -297,8 +297,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec:map"></a>
-    <strong>ControlSpec:map (value)</strong>
+    <a name = "map"></a>
+    <strong>map (value)</strong>
     </dt>
     <dd>
     transform an incoming value between 0 and 1 through this ControlSpec
@@ -324,8 +324,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec:unmap"></a>
-    <strong>ControlSpec:unmap (value)</strong>
+    <a name = "unmap"></a>
+    <strong>unmap (value)</strong>
     </dt>
     <dd>
     untransform a transformed value into its original value
@@ -351,8 +351,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec:copy"></a>
-    <strong>ControlSpec:copy ()</strong>
+    <a name = "copy"></a>
+    <strong>copy ()</strong>
     </dt>
     <dd>
     copy this ControlSpec into a new one
@@ -371,8 +371,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec:print"></a>
-    <strong>ControlSpec:print ()</strong>
+    <a name = "print"></a>
+    <strong>print ()</strong>
     </dt>
     <dd>
     print out the configuration of this ControlSpec
@@ -389,8 +389,8 @@
 
     <dl class="function">
     <dt>
-    <a name = "ControlSpec.UNIPOLAR"></a>
-    <strong>ControlSpec.UNIPOLAR</strong>
+    <a name = "UNIPOLAR"></a>
+    <strong>UNIPOLAR</strong>
     </dt>
     <dd>
     converts values to a unipolar range
@@ -403,8 +403,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec.BIPOLAR"></a>
-    <strong>ControlSpec.BIPOLAR</strong>
+    <a name = "BIPOLAR"></a>
+    <strong>BIPOLAR</strong>
     </dt>
     <dd>
     converts values to bipolar range
@@ -417,8 +417,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec.FREQ"></a>
-    <strong>ControlSpec.FREQ</strong>
+    <a name = "FREQ"></a>
+    <strong>FREQ</strong>
     </dt>
     <dd>
     converts to a frequency range
@@ -431,8 +431,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec.LOFREQ"></a>
-    <strong>ControlSpec.LOFREQ</strong>
+    <a name = "LOFREQ"></a>
+    <strong>LOFREQ</strong>
     </dt>
     <dd>
     converts to a low frequency range
@@ -445,8 +445,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec.MIDFREQ"></a>
-    <strong>ControlSpec.MIDFREQ</strong>
+    <a name = "MIDFREQ"></a>
+    <strong>MIDFREQ</strong>
     </dt>
     <dd>
     converts to a mid frequency range
@@ -459,8 +459,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec.WIDEFREQ"></a>
-    <strong>ControlSpec.WIDEFREQ</strong>
+    <a name = "WIDEFREQ"></a>
+    <strong>WIDEFREQ</strong>
     </dt>
     <dd>
     converts to an exponential frequency range from 0.1 to 20khz
@@ -473,8 +473,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec.PHASE"></a>
-    <strong>ControlSpec.PHASE</strong>
+    <a name = "PHASE"></a>
+    <strong>PHASE</strong>
     </dt>
     <dd>
     maps into pi for controlling phase values
@@ -487,8 +487,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec.RQ"></a>
-    <strong>ControlSpec.RQ</strong>
+    <a name = "RQ"></a>
+    <strong>RQ</strong>
     </dt>
     <dd>
     converts to an exponential RQ range
@@ -501,8 +501,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec.MIDI"></a>
-    <strong>ControlSpec.MIDI</strong>
+    <a name = "MIDI"></a>
+    <strong>MIDI</strong>
     </dt>
     <dd>
     converts to a MIDI range (default 64)
@@ -515,8 +515,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec.MIDINOTE"></a>
-    <strong>ControlSpec.MIDINOTE</strong>
+    <a name = "MIDINOTE"></a>
+    <strong>MIDINOTE</strong>
     </dt>
     <dd>
     converts to a range for MIDI notes (default 60)
@@ -529,8 +529,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec.MIDIVELOCITY"></a>
-    <strong>ControlSpec.MIDIVELOCITY</strong>
+    <a name = "MIDIVELOCITY"></a>
+    <strong>MIDIVELOCITY</strong>
     </dt>
     <dd>
     converts to a range for MIDI velocity (default 64)
@@ -543,8 +543,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec.DB"></a>
-    <strong>ControlSpec.DB</strong>
+    <a name = "DB"></a>
+    <strong>DB</strong>
     </dt>
     <dd>
     converts to a dB range
@@ -557,8 +557,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec.AMP"></a>
-    <strong>ControlSpec.AMP</strong>
+    <a name = "AMP"></a>
+    <strong>AMP</strong>
     </dt>
     <dd>
     converts to a linear amplitude range (0-1)
@@ -571,8 +571,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec.PAN"></a>
-    <strong>ControlSpec.PAN</strong>
+    <a name = "PAN"></a>
+    <strong>PAN</strong>
     </dt>
     <dd>
     converts to a panning range (-1 - 1)
@@ -585,8 +585,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec.DETUNE"></a>
-    <strong>ControlSpec.DETUNE</strong>
+    <a name = "DETUNE"></a>
+    <strong>DETUNE</strong>
     </dt>
     <dd>
     converts to a detune range
@@ -599,8 +599,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec.RATE"></a>
-    <strong>ControlSpec.RATE</strong>
+    <a name = "RATE"></a>
+    <strong>RATE</strong>
     </dt>
     <dd>
     converts to a sensible range for playback rate
@@ -613,8 +613,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec.BEATS"></a>
-    <strong>ControlSpec.BEATS</strong>
+    <a name = "BEATS"></a>
+    <strong>BEATS</strong>
     </dt>
     <dd>
     convert to a good range for beats
@@ -627,8 +627,8 @@
 
 </dd>
     <dt>
-    <a name = "ControlSpec.DELAY"></a>
-    <strong>ControlSpec.DELAY</strong>
+    <a name = "DELAY"></a>
+    <strong>DELAY</strong>
     </dt>
     <dd>
     converts to a good range for delay
@@ -647,7 +647,7 @@
 </div> <!-- id="main" -->
 <div id="about">
 <i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
-<i style="float:right;">Last updated 2024-10-06 19:51:15 </i>
+<i style="float:right;">Last updated 2024-10-06 20:11:00 </i>
 </div> <!-- id="about" -->
 </div> <!-- id="container" -->
 </body>

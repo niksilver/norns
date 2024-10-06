@@ -5,6 +5,7 @@
 -- has [examples for this module](https://monome.org/docs/norns/reference/poll).
 --
 -- @module poll
+-- @alias Poll
 
 local tab = require 'tabutil'
 

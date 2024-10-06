@@ -4,6 +4,8 @@
 -- The [norns script reference](https://monome.org/docs/norns/reference/)
 -- has [examples for this module](https://monome.org/docs/norns/reference/lib/timeline).
 --
+-- @module lib.timeline
+-- @alias TL
 
 --- globals are available on crow, otherwise require for norns
 local s = sequins or require 'sequins'

@@ -131,12 +131,13 @@ end
 
 --- factory method to add a new sprocket to this lattice
 -- @tparam[opt] table args optional named attributes are:
--- - "action" (function) called on each step of this division (lattice.transport is passed as the argument), defaults to a no-op
--- - "division" (number) the division of the sprocket, defaults to 1/4
--- - "enabled" (boolean) is this sprocket enabled, defaults to true
--- - "swing" (number) is the percentage of swing (0 - 100%), defaults to 50
--- - "delay" (number) specifies amount of delay, as fraction of division (0.0 - 1.0), defaults to 0
--- - "order" (number) specifies the place in line this lattice occupies from 1 to 5, lower first, defaults to 3
+--
+-- * "action" (function) called on each step of this division (lattice.transport is passed as the argument), defaults to a no-op
+-- * "division" (number) the division of the sprocket, defaults to 1/4
+-- * "enabled" (boolean) is this sprocket enabled, defaults to true
+-- * "swing" (number) is the percentage of swing (0 - 100%), defaults to 50
+-- * "delay" (number) specifies amount of delay, as fraction of division (0.0 - 1.0), defaults to 0
+-- * "order" (number) specifies the place in line this lattice occupies from 1 to 5, lower first, defaults to 3
 -- @treturn table a new sprocket
 function Lattice:new_sprocket(args)
   self.sprocket_id_counter = self.sprocket_id_counter + 1
